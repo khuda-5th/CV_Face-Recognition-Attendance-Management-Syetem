@@ -1,1 +1,1 @@
-# CV_Face-Recognition-Attendance-Management-Syetem
+# CV_Face-Recognition-Attendance-Management-System
