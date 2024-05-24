@@ -131,3 +131,10 @@ for epoch in range(EPOCH):
 
 elapsed = (time.time() - start_time)/60
 print(f'Total Training Time: {elapsed:.2f} min')
+
+
+import os
+
+current_dir = os.getcwd()
+model_save_path = os.path.join(current_dir, 'vgg_model.pth')
+torch.save(model.state_dict(), model_save_path)
