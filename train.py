@@ -24,7 +24,7 @@ for i in range(len(parsed_dataset)):
 
 
 
-BATCH_SIZE = 64
+BATCH_SIZE = 16
 
 X_train, X_test, y_train, y_test = train_test_split(image, label, test_size=0.20, random_state=425)
 
@@ -162,14 +162,14 @@ def compute_accuracy_and_loss(model, data_loader, device):
         
         prediction = model.distance(image_1_feature, image_2_feature)
 
-        cost = loss(prediction, bool_to_int(label_1==label_2))
+        cost = loss(prediction, bool_to_int(label_1==label_2).to(DEVICE))
         l2_cost = 0
         for param in model.parameters():
             l2_cost += torch.norm(param, p=2)
         total_cost = cost + l2_cost
         
         num_examples += (label_1==label_2).size(0)
-        accuracy += (prediction == (label_1==label_2)).sum()
+        accuracy += (prediction == (label_1==label_2).to(DEVICE)).sum()
         cost_sum += total_cost.sum()
         
         print (f'Batch {batch_idx:03d}/{len(data_loader):03d} |'
@@ -206,7 +206,7 @@ for epoch in range(EPOCH):
 
         prediction = model.distance(image_1_feature, image_2_feature)
 
-        cost = loss(prediction, bool_to_int(label_1==label_2))
+        cost = loss(prediction, bool_to_int(label_1==label_2).to(DEVICE))
         l2_cost = 0
         for param in model.parameters():
             l2_cost += torch.norm(param, p=2)
