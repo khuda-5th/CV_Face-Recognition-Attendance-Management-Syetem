@@ -87,21 +87,3 @@ def load_known_faces():
         return known_face_ids, known_face_encodings, known_face_names
     else:
         return [], [], []
-
-
-
-
-# # Load known faces from file
-# def load_known_faces():
-#     if os.path.exists(encoding_file):
-#         with open(encoding_file, 'r') as f:
-#             data = json.load(f)
-#         known_face_ids = np.array(data['ids'])
-#         known_face_encodings = np.array(data['encodings'])
-#         known_face_names = data['names']
-#         print(known_face_names)
-#     else:
-#         known_face_ids = []
-#         known_face_encodings = []
-#         known_face_names = []
-#     return known_face_ids, known_face_encodings, known_face_names
