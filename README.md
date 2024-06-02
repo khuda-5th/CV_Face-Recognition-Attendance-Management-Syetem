@@ -4,13 +4,14 @@
 <br>
 
 ## 연구 배경
-![image](https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/a31158a1-0770-4cf4-b6af-d818e22448d8)
+![image](https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/a31158a1-0770-4cf4-b6af-d818e22448d8)  
 `Siampain`은 불편한 출석체크, 대리출석 문제, 출튀 문제를 효과적으로 해결한 **Face Recognition 모델**입니다.
 
 <br>
 
 ## 📌 사용 데이터
-![image](https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/bf46c72f-26fa-4944-a83d-32a62aefe6fd)
+<img width="644" alt="mask_data" src="https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/88676496/654936bb-ab97-4c02-bc69-3989422779c3"><br/>
+https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=469
 
 <br>
 
@@ -22,8 +23,9 @@
 ### 2️⃣ 모델 세부 사항
 ![image](https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/3a34954f-93cc-4162-9fa6-204fa78d2311)
 >- Loss function : Binary Cross Entropy + L2 Regularizatioin
->- optimizer : Adam
+>- Optimizer : Adam
 >- Initialization : Xavier Initialization
+>- Siamese neural network 사용
 ### 3️⃣ 하이퍼파라미터
 >- Batch Size: 16
 >- Lambda of L2 Regulariztion: 0.01
@@ -48,7 +50,7 @@
 ## 🤗 Members
 | 김민권 | 도윤서 | 류여진 | 박현준 |
 | :-: | :-: | :-: | :-: |
-| <img src='https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/6128d65a-de7f-4f8c-a33f-fcdb0ae3c373' height=130 width=130></img> |  <img src='https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/9d3b5adf-e69e-4ff8-81f1-e0808f8847ae' height=130 width=130></img> | <img src='https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/96ed3cef-a558-4920-b78e-96b060176c82' height=130 width=130></img> | <img src='https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/7c2de721-ad83-431a-95cf-2a3346771423' height=130 width=130></img> |
+| <img src='https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/6128d65a-de7f-4f8c-a33f-fcdb0ae3c373' height=130 width=130></img> | <img src='https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/9d3b5adf-e69e-4ff8-81f1-e0808f8847ae' height=130 width=130></img> | <img src='https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/96ed3cef-a558-4920-b78e-96b060176c82' height=130 width=130></img> | <img src='https://github.com/khuda-5th/CV_Face-Recognition-Attendance-Management-System/assets/160306623/7c2de721-ad83-431a-95cf-2a3346771423' height=130 width=130></img> |
 
 | 이하영 | 임성은 | 장서연 | 정유진 |
 | :-: | :-: | :-: | :-: |
